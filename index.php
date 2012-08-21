@@ -1,4 +1,7 @@
 <?php
+	// Now I just want to see what happens when I have two public
+	// branches on github... boing boing
+
 	function hello_world($language = FALSE)
 	{	
 		$hello = array(
