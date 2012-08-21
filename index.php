@@ -1,5 +1,5 @@
 <?php
-	$languages = array(
+	$hello = array(
 		'Japanese' => 'Konnichiwa',
 		'French' => 'Bonjour',
 		'German' => 'Hallo',
@@ -13,8 +13,23 @@
 		'Hindi' => 'Namaste',
 		'Arabic' => "As-salaam 'alaikum"
 		);
+		
+	$goodbye = array(
+		'Japanese' => 'Sayounara',
+		'French' => 'Au reviour',
+		'German' => 'Auf wiedersehen',
+		'Italian' => 'Arrivederci',
+		'Spanish' => 'Adios',
+		'Mandarin Chinese' => 'Baibai',
+		'Danish' => 'Farvel',
+		'Malay' => 'Selamat tinggal',
+		'Maori' => 'E noho raa',
+		'Hawaiian' => 'A hui ho',
+		'Hindi' => 'Namaste',
+		'Arabic' => "Ilaa al-liqaa"
+		);
 
-	$random_language = array_rand($languages);
+	$random_language = array_rand($hello);
 	
-	echo "$languages[$random_language] world! (That was $random_language!)";
+	echo "$hello[$random_language] world! $goodbye[$random_language] world! (That was $random_language!)<br />";
 ?>
