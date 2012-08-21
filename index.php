@@ -1,7 +1,8 @@
 <?php
 	function hello_world($language = FALSE)
 	{	
-		$languages = array(
+		$hello = array(
+			'English' => 'Hello',
 			'Japanese' => 'Konnichiwa',
 			'French' => 'Bonjour',
 			'German' => 'Hallo',
@@ -15,8 +16,24 @@
 			'Hindi' => 'Namaste',
 			'Arabic' => "As-salaam 'alaikum"
 			);
+			
+		$goodbye = array(
+			'English' => 'Goodbye',
+			'Japanese' => 'Sayounara',
+			'French' => 'Au reviour',
+			'German' => 'Auf wiedersehen',
+			'Italian' => 'Arrivederci',
+			'Spanish' => 'Adios',
+			'Mandarin Chinese' => 'Baibai',
+			'Danish' => 'Farvel',
+			'Malay' => 'Selamat tinggal',
+			'Maori' => 'E noho raa',
+			'Hawaiian' => 'A hui ho',
+			'Hindi' => 'Namaste',
+			'Arabic' => "Ilaa al-liqaa"
+			);
 
-		if ($language AND isset($languages[$language]))
+		if ($language AND isset($hello[$language]))
 		{
 			$use_language = $language;
 		}
@@ -26,10 +43,10 @@
 		}
 		else
 		{
-			$use_language = array_rand($languages);
+			$use_language = array_rand($hello);
 		}
 		
-		return "$languages[$use_language] world! (That was $use_language!)";
+		return "$hello[$use_language] world! $goodbye[$use_language] world! (That was $use_language!)";
 	}
 	
 	// A language I know
