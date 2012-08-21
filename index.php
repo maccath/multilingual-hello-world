@@ -1,5 +1,6 @@
 <?php
 	$hello = array(
+		'English' => 'Hello',
 		'Japanese' => 'Konnichiwa',
 		'French' => 'Bonjour',
 		'German' => 'Hallo',
@@ -15,6 +16,7 @@
 		);
 		
 	$goodbye = array(
+		'English' => 'Goodbye',
 		'Japanese' => 'Sayounara',
 		'French' => 'Au reviour',
 		'German' => 'Auf wiedersehen',
